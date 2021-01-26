@@ -44,7 +44,7 @@ app.get('/pic/:id', cors(), (req, res) => {
   )
 })
 
-let port = process.env.port || 3000
+let port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log(`服务器在 ${port} 端口监听中，可通过如下路径访问 127.0.0.1:${port}`)
